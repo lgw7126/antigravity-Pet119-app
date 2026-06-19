@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: npm run build
+      - run: npm run build -- --base=/antigravity-Pet119-app/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
